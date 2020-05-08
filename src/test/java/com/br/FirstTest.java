@@ -7,7 +7,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.webdriver.chrome.options
 
 public class FirstTest {
 	protected WebDriver driver;
