@@ -14,7 +14,7 @@ public class FirstTest {
 	@Test
 	public void browserChrome(){
 
-		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver --whitelisted-ips=""");
 		WebDriver driver = new ChromeDriver();
 		driver.get(url);
 
