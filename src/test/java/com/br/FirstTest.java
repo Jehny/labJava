@@ -15,7 +15,7 @@ public class FirstTest {
 	//@Test
 	public void browserIE() {
 		System.setProperty("webdriver.ie.driver",
-				"C:\\Users\\Jehny\\eclipse-workspace\\labJava\\drivers\\IEDriverServer4.0.exe");
+				"drivers\\IEDriverServer4.0.exe");
 		driver = new InternetExplorerDriver();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get(url);
@@ -26,7 +26,7 @@ public class FirstTest {
 
 		System.setProperty(
 		"webdriver.chrome.driver",
-		"C:\\Users\\Jehny\\eclipse-workspace\\labJava\\drivers\\chromedriver.exe");
+		"drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get(url);
 
@@ -36,7 +36,7 @@ public class FirstTest {
 	public void browserFirefox(){
 		System.setProperty(
 				"webdriver.gecko.driver",
-				"C:\\Users\\Jehny\\eclipse-workspace\\labJava\\drivers\\geckodriver.exe");
+				"drivers\\geckodriver.exe");
 		driver = new FirefoxDriver();
 		driver.get(url);
 	}
