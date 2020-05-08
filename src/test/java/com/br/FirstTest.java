@@ -21,7 +21,7 @@ public class FirstTest {
 		driver.get(url);
 	}
 	
-	//@Test
+	@Test
 	public void browserChrome(){
 
 		System.setProperty(
@@ -32,7 +32,7 @@ public class FirstTest {
 
 	}
 	
-	@Test
+	//@Test
 	public void browserFirefox(){
 		System.setProperty(
 				"webdriver.gecko.driver",
