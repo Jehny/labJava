@@ -36,7 +36,7 @@ public class FirstTest {
 	public void browserFirefox(){
 		System.setProperty(
 				"webdriver.gecko.driver",
-				"drivers\\geckodriver");
+				"/usr/local/bin/geckodriver");
 		driver = new FirefoxDriver();
 		driver.get(url);
 	}
