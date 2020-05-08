@@ -34,12 +34,10 @@ public class FirstTest {
 	@Test
 	public void browserChrome(){
 
-		System.setProperty(
-		"webdriver.chrome.driver",
-		"driver/chromedrive");
-		driver = webdriver.Chrome("/usr/bin/chromedriver");
+		File chromeDriver = new File("/usr/bin/chromedriver");
+    		System.setProperty("webdriver.chrome.driver", chromeDriver.getAbsolutePath());
+    		driver = new ChromeDriver();
 		driver.get(url);
-
 	}
 	
 	//@Test
