@@ -17,10 +17,9 @@ public class FirstTest {
 
 		System.setProperty(
 		"webdriver.chrome.driver",
-		"/usr/bin/chromedriver");
+		"/opt/google/chrome/google-chrome");
 		ChromeOptions options = new ChromeOptions();
-			options.setExperimentalOption("useAutomationExtension", false);
-		WebDriver driver = new ChromeDriver(options);
+		driver = new ChromeDriver();
 		driver.get(url);
 	}
 	
