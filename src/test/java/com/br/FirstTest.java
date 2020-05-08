@@ -17,7 +17,7 @@ public class FirstTest {
 
 		System.setProperty(
 		"webdriver.chrome.driver",
-		"/usr/bin/chromedriver",chrome_options=chrome_options);
+		"/usr/bin/google-chrome");
 		driver = new ChromeDriver();
 		driver.get(url);
 	}
