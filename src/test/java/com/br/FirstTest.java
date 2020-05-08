@@ -21,7 +21,7 @@ public class FirstTest {
 		driver.get(url);
 	}
 	
-	@Test
+	//@Test
 	public void browserChrome(){
 
 		System.setProperty(
@@ -31,7 +31,28 @@ public class FirstTest {
 		driver.get(url);
 
 	}
-	
+		@Test
+	public void browserChrome(){
+
+		System.setProperty(
+		"webdriver.chrome.driver",
+		"/usr/bin/chromedriver");
+		ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("--headless");
+                chromeOptions.addArguments("--no-sandbox");
+		WebDriver driver = new ChromeDriver(chromeOptions);
+ 
+                driver.get("https://google.com");
+ 
+                Thread.sleep(1000);
+ 
+                if (driver.getPageSource().contains("I'm Feeling Lucky")) {
+                        System.out.println("Pass");
+                } else {
+                        System.out.println("Fail");
+                }
+                driver.quit();
+	}
 	//@Test
 	public void browserFirefox(){
 		System.setProperty(
