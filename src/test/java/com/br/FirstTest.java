@@ -15,10 +15,11 @@ public class FirstTest {
 	public void browserChrome(){
 
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--disable-dev-shm-usage");
 		WebDriver driver = new ChromeDriver();
 		driver.get(url);
+		#if defined(OS_LINUX) && !defined(OS_CHROMEOS)
+			const char kDisableDevShmUsage[] = "disable-dev-shm-usage";
+		#endif
 
 	}
 	
