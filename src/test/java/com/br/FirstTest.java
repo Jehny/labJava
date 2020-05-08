@@ -21,7 +21,7 @@ public class FirstTest {
 		driver.get(url);
 	}
 	
-	//@Test
+	@Test
 	public void browserChrome(){
 
 		System.setProperty(
@@ -30,13 +30,6 @@ public class FirstTest {
 		driver = new ChromeDriver();
 		driver.get(url);
 
-	}
-	@Test
-	public void browserChrome(){
-
-		System.setProperty("webdriver.chrome.driver", chromeDriver.getAbsolutePath(/usr/bin/chromedriver));
-    		driver = new ChromeDriver();
-		driver.get(url);
 	}
 	
 	//@Test
