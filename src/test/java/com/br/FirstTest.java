@@ -23,6 +23,6 @@ public class FirstTest {
 				options.addArguments("--headless");
 				options.addArguments("--disable-dev-shm-usage");
 				driver = new ChromeDriver(options);
-				driver.get(url);
+				driver.get("http://www.globo.com");
 	}
 }
