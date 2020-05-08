@@ -8,6 +8,27 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
+public class WebDriverFactory {
+
+	public static WebDriver createChromeDriver() {
+		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+		WebDriver driver = new ChromeDriver(capabilities);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+		return driver;
+	}
+
+	public Wait<WebDriver> createWebDriverWait(WebDriver driver) {
+		return createWait(driver, 10, 100);
+	}
+
+	public Wait<WebDriver> createWait(WebDriver driver, long withTimeout, long pollingEvery) {
+		return new FluentWait<WebDriver>(driver).withTimeout(withTimeout, TimeUnit.SECONDS)
+				.pollingEvery(pollingEvery, TimeUnit.MILLISECONDS).ignoring(NoSuchElementException.class)
+				.ignoring(StaleElementReferenceException.class);
+	}
+}
+
 public class FirstTest {
 	protected WebDriver driver;
 	public String url = "http://www.globo.com";
