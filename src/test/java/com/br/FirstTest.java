@@ -21,26 +21,15 @@ public class FirstTest {
 		driver.get(url);
 	}
 	
-	//@Test
+	@Test
 	public void browserChrome(){
 
 		System.setProperty(
 		"webdriver.chrome.driver",
-		"driver/chromedrive");
+		"/usr/bin/chromedrive");
 		driver = new ChromeDriver();
 		driver.get(url);
 
-	}
-		@Test
-	public void browserChrome(){
-
-		System.setProperty(
-		"webdriver.chrome.driver",
-		"/usr/bin/chromedriver");
-		ChromeOptions chromeOptions = new ChromeOptions();
-                chromeOptions.addArguments("--headless");
-                chromeOptions.addArguments("--no-sandbox");
-		WebDriver driver = new ChromeDriver(chromeOptions);
 	}
 	//@Test
 	public void browserFirefox(){
