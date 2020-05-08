@@ -37,7 +37,7 @@ public class FirstTest {
 		System.setProperty(
 		"webdriver.chrome.driver",
 		"driver/chromedrive");
-		driver = webdriver.Chrome("/usr/lib/chromium-browser/chromedriver");
+		driver = webdriver.Chrome("/usr/bin/chromedriver");
 		driver.get(url);
 
 	}
