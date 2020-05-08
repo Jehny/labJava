@@ -14,9 +14,9 @@ public class FirstTest {
 	@Test
 	public void browserChrome(){
 
-		System.setProperty("webdriver.chrome.driver", "chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/var/jenkins_home/chromedriver");
 		WebDriver driver = new ChromeDriver();
-		driver.get("http://www.globo.com");
+		driver.get(url);
 
 	}
 	
