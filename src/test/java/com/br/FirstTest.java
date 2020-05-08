@@ -19,7 +19,7 @@ public class FirstTest {
 		"webdriver.chrome.driver",
 		"/usr/bin/chromium-browser");
 		ChromeOptions options = new ChromeOptions();
-		options.add_argument('--ignore-certificate-errors');
+		options.add_argument("--ignore-certificate-errors");
 		options.add_argument("--test-type");
 		options.addArguments("test-type");
 		options.addArguments("start-maximized");
