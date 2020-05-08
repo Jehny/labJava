@@ -17,9 +17,9 @@ public class FirstTest {
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.get(url);
-		#if defined(OS_LINUX) && !defined(OS_CHROMEOS)
+		if defined(OS_LINUX) && !defined(OS_CHROMEOS)
 			const char kDisableDevShmUsage[] = "disable-dev-shm-usage";
-		#endif
+		endif
 
 	}
 	
