@@ -17,7 +17,7 @@ public class FirstTest {
 
 		System.setProperty(
 				"webdriver.chrome.driver",
-				"/usr/bin/chromium-browser");
+				"/usr/bin/chromedriver");
 				ChromeOptions options = new ChromeOptions();
 				options.addArguments("--ignore-certificate-errors");
 				options.addArguments("--test-type");
