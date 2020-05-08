@@ -1,3 +1,3 @@
 # LabJava
-Java Automation Test to run with Jenkins
+Java Automation Test to run with Jenkins.
 ChromeDriver v81
