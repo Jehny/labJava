@@ -34,8 +34,7 @@ public class FirstTest {
 	@Test
 	public void browserChrome(){
 
-		File chromeDriver = new File("/usr/bin/chromedriver");
-    		System.setProperty("webdriver.chrome.driver", chromeDriver.getAbsolutePath());
+		System.setProperty("webdriver.chrome.driver", chromeDriver.getAbsolutePath(/usr/bin/chromedriver));
     		driver = new ChromeDriver();
 		driver.get(url);
 	}
