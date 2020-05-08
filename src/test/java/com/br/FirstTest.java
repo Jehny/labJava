@@ -19,9 +19,7 @@ public class FirstTest {
 		"webdriver.chrome.driver",
 		"/usr/bin/chromedriver");
 		ChromeOptions options = new ChromeOptions();
-			options.addArguments("--headless");
-        		options.addArguments("--no-sandbox");
-        		options.addArguments("--disable-dev-shm-usage");
+			options.addArguments("--whitelisted-ips");
 		driver = new ChromeDriver(options);
 		driver.get(url);
 	}
