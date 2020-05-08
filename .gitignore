@@ -6,7 +6,6 @@
 .metadata
 bin/
 tmp/
-drivers/
 *.tmp
 *.bak
 *.swp
@@ -78,6 +77,8 @@ local.properties
 
 # Log file
 *.log
+*.exe
+*.gz
 
 # BlueJ files
 *.ctxt
