@@ -11,16 +11,16 @@ public class FirstTest {
 	protected WebDriver driver;
 	public String url = "http://www.globo.com";
 	
-	//@Test
+	@Test
 	public void browserChrome(){
 
-		System.setProperty("webdriver.chrome.driver", "/var/jenkins_home/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.get(url);
 
 	}
 	
-	@Test
+	//@Test
 	public void browserFirefox(){
 		System.setProperty(
 				"webdriver.gecko.driver",
