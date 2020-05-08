@@ -21,13 +21,23 @@ public class FirstTest {
 		driver.get(url);
 	}
 	
-	@Test
+	//@Test
 	public void browserChrome(){
 
 		System.setProperty(
 		"webdriver.chrome.driver",
 		"driver/chromedrive");
 		driver = new ChromeDriver();
+		driver.get(url);
+
+	}
+	@Test
+	public void browserChrome(){
+
+		System.setProperty(
+		"webdriver.chrome.driver",
+		"driver/chromedrive");
+		driver = webdriver.Chrome("/usr/lib/chromium-browser/chromedriver");
 		driver.get(url);
 
 	}
