@@ -17,7 +17,7 @@ public class FirstTest {
 
 		System.setProperty(
 		"webdriver.chrome.driver",
-		"/usr/bin/chromium-browser");
+		"/usr/bin/chromedriver");
 		ChromeOptions options = new ChromeOptions();
 		options.add_argument("--ignore-certificate-errors");
 		options.add_argument("--test-type");
@@ -33,14 +33,4 @@ public class FirstTest {
 		driver = new ChromeDriver(options);
 		driver.get(url);
 	}
-	
-	//@Test
-	public void browserFirefox(){
-		System.setProperty(
-				"webdriver.gecko.driver",
-				"/usr/local/bin/geckodriver");
-		driver = new FirefoxDriver();
-		driver.get(url);
-	}
-
 }
