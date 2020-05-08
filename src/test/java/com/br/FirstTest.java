@@ -18,6 +18,7 @@ public class FirstTest {
 		System.setProperty(
 		"webdriver.chrome.driver",
 		"/usr/bin/chromium-browser");
+		ChromeOptions options = new ChromeOptions();
 		options.add_argument('--ignore-certificate-errors')
 		options.add_argument("--test-type")
 		options.addArguments("test-type");
@@ -29,7 +30,7 @@ public class FirstTest {
 		options.addArguments("test-type=browser");
 		options.AddArgument("--incognito");
 		options.AddArgument("--no-sandbox");
-		driver = webdriver.Chrome(chrome_options=options);
+		driver = new ChromeDriver(options);
 		driver.get(url);
 	}
 	
