@@ -19,17 +19,9 @@ public class FirstTest {
 				"webdriver.chrome.driver",
 				"/usr/bin/chromedriver");
 				ChromeOptions options = new ChromeOptions();
-				options.addArguments("--ignore-certificate-errors");
-				options.addArguments("--test-type");
-				options.addArguments("test-type");
-				options.addArguments("start-maximized");
-				options.addArguments("--window-size=1920,1080");
-				options.addArguments("--enable-precise-memory-info");
-				options.addArguments("--disable-popup-blocking");
-				options.addArguments("--disable-default-apps");
-				options.addArguments("test-type=browser");
-				options.addArguments("--incognito");
 				options.addArguments("--no-sandbox");
+				options.addArguments("--headless");
+				options.addArguments("--disable-dev-shm-usage");
 				driver = new ChromeDriver(options);
 				driver.get(url);
 	}
