@@ -17,6 +17,9 @@ public class FirstTest {
 		System.setProperty(
 		"webdriver.chrome.driver",
 		"/usr/bin/chromedriver");
+		ChromeOptions options = new ChromeOptions();
+        		options.addArguments("--no-sandbox");
+        		options.addArguments("--disable-dev-shm-usage");
 		driver = new ChromeDriver();
 		driver.get(url);
 	}
