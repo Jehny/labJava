@@ -19,8 +19,8 @@ public class FirstTest {
 		"webdriver.chrome.driver",
 		"/usr/bin/chromedriver");
 		ChromeOptions options = new ChromeOptions();
-			options.addArguments("--whitelisted-ips");
-		driver = new ChromeDriver(options);
+			options.setExperimentalOption("useAutomationExtension", false);
+		WebDriver driver = new ChromeDriver(options);
 		driver.get(url);
 	}
 	
