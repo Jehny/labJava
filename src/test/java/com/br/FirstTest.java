@@ -21,17 +21,18 @@ public class FirstTest {
 		driver.get(url);
 	}
 	
-	@Test
+	//@Test
 	public void browserChrome(){
 
 		System.setProperty(
 		"webdriver.chrome.driver",
-		"/usr/bin/chromedrive");
+		"drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get(url);
 
 	}
-	//@Test
+	
+	@Test
 	public void browserFirefox(){
 		System.setProperty(
 				"webdriver.gecko.driver",
