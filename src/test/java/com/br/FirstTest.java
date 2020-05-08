@@ -15,6 +15,7 @@ public class FirstTest {
 	public void browserChrome(){
 
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+		options.addArguments("--disable-dev-shm-usage");
 		WebDriver driver = new ChromeDriver();
 		driver.get(url);
 
