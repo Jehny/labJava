@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class FirstTest {
 	protected WebDriver driver;
-	public String url = "https://www.globo.com/";
+	public String url = "$url";
 	
 	@Test
 	public void browserChrome(){
@@ -24,6 +24,6 @@ public class FirstTest {
 				options.addArguments("--disable-dev-shm-usage");
 				options.addArguments("--whitelisted-ips");
 				driver = new ChromeDriver(options);
-				driver.get(url);
+				driver.get($url);
 	}
 }
