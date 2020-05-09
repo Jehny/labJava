@@ -24,6 +24,6 @@ public class FirstTest {
 				options.addArguments("--disable-dev-shm-usage");
 				options.addArguments("--whitelisted-ips");
 				driver = new ChromeDriver(options);
-				driver.get($url);
+				driver.get(url);
 	}
 }
