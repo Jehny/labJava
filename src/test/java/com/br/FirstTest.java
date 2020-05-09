@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class FirstTest {
 	protected WebDriver driver;
-	public String url = "$url";
+	public String url = "https://www.globo.com/";
 	
 	@Test
 	public void browserChrome(){
