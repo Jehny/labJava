@@ -5,7 +5,7 @@ services:
 
 testSmokeCy: &testSmokeCy
   install:
-  - docker run --rm -it -v $PWD:/e2e -w /e2e -e CYPRESS_RECORD_KEY=$CY_KEY cypress/included:3.4.0 --record --parallel --group docker --ci-build-id TRAVIS_BUILD_ID
+  - docker run -it --rm --name labjava -v "$(pwd)":/usr/src/mymaven -w /usr/src/mymaven maven:3.3-jdk-8 mvn clean install
   - kill $(jobs -p) || true
 
 jobs:
@@ -13,17 +13,18 @@ jobs:
   allow_failures:
   include:
   - script:
-    name: "Cypress Container 1"
+    name: "Maven Container 1"
     <<: *testSmokeCy
   - script:
-    name: "Cypress Container 2"
+    name: "Maven Container 2"
     <<: *testSmokeCy  
 
 notifications: 
   email:
     recipients:
       - gb8may@gmail.com
-      
+      - jehnyffen@gmail.com
+ 
     on_success: always
     on_failure: always
 
