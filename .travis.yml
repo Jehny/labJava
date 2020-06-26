@@ -29,9 +29,9 @@ notifications:
     on_success: always
     on_failure: always
 
-cache:
-  apt: true
-  docker: true
-  directories:
-  - ~/.docker
-  - ~/.cache
+# cache:
+# apt: true
+# docker: true
+# directories:
+# - ~/.docker
+# - ~/.cache
