@@ -14,11 +14,11 @@ jobs:
   allow_failures:
   include:
   - script:
-    name: "Maven Container 1"
+    name: "Maven Container"
     <<: *testSmokeCy
-  - script:
-    name: "Maven Container 2"
-    <<: *testSmokeCy  
+#  - script:
+#    name: "Maven Container 2"
+#    <<: *testSmokeCy  
 
 notifications: 
   email:
