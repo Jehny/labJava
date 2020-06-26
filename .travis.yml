@@ -7,7 +7,7 @@ testSmokeCy: &testSmokeCy
   install:
   - docker build -t docker-chromium .
   - docker run -it docker-chromium
-  - kill $(jobs -p) || true
+#  - kill $(jobs -p) || true
 
 jobs:
   fast_finish: true
