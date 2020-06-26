@@ -1,26 +1,12 @@
 language: shell
-#sudo: required
 services:
   - docker
 
-    #testSmokeCy: &testSmokeCy
 install:
   - docker build -t docker-chromium .
   - docker run -it docker-chromium
-#  - kill $(jobs -p) || true
 
-    #jobs:
-    #fast_finish: true
-    # allow_failures:
-    #include:
-    #- script:
-    # name: "Maven Container"
-    # <<: *testSmokeCy
-#  - script:
-#    name: "Maven Container 2"
-#    <<: *testSmokeCy  
-
-notifications: 
+notifications:
   email:
     recipients:
       - gb8may@gmail.com
@@ -31,7 +17,6 @@ notifications:
 
 cache:
   apt: true
-#  docker: true
   directories:
   - ~/.docker
   - ~/.cache
