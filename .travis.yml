@@ -3,19 +3,19 @@ language: shell
 services:
   - docker
 
-testSmokeCy: &testSmokeCy
-  install:
+    #testSmokeCy: &testSmokeCy
+install:
   - docker build -t docker-chromium .
   - docker run -it docker-chromium
 #  - kill $(jobs -p) || true
 
-jobs:
-  fast_finish: true
-  allow_failures:
-  include:
-  - script:
-    name: "Maven Container"
-    <<: *testSmokeCy
+    #jobs:
+    #fast_finish: true
+    # allow_failures:
+    #include:
+    #- script:
+    # name: "Maven Container"
+    # <<: *testSmokeCy
 #  - script:
 #    name: "Maven Container 2"
 #    <<: *testSmokeCy  
