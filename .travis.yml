@@ -1,5 +1,5 @@
-language: bash
-sudo: required
+language: shell
+#sudo: required
 services:
   - docker
 
@@ -31,7 +31,7 @@ notifications:
 
 cache:
   apt: true
-  docker: true
+#  docker: true
   directories:
   - ~/.docker
   - ~/.cache
