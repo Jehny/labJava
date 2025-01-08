@@ -5,6 +5,7 @@
 ### Eclipse ###
 .metadata
 bin/
+drivers/
 tmp/
 *.tmp
 *.bak
@@ -14,6 +15,8 @@ local.properties
 .settings/
 .loadpath
 .recommenders
+*.DS_Store
+*.yml
 
 # External tool builders
 .externalToolBuilders/

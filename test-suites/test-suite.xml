@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Suite" verbose="1" group-by-instances="true">
+	<parameter name="environment" value="EcobeeTest" />
+	<parameter name="browser" value="CHROME" />
+	<parameter name="url" value="" />
+	
+	<!-- test name="Challenge Ecobee" >
+		<classes>
+			<class name="lab.tests.EcobeeJsonTest" />
+		</classes>
+	</test> -->	
+	
+	<test name="Challenge Ecobee" >
+		<classes>
+			<class name="lab.tests.EcobeeTest" />
+		</classes>
+	</test>
+		
+</suite>
